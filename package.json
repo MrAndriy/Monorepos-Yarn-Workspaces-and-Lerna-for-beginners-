@@ -1,0 +1,20 @@
+{
+  "name": "monorepo-managers",
+  "version": "1.0.0",
+  "private": "true",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "frontend",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "yarn --cwd frontend start",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "lerna": "^5.5.4"
+  }
+}
